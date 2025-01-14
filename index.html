@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Notas Complejas (Iván M.F.)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mis Notas Complejas (Iván M.F.) </h1>
+        <nav>
+            <ul>
+                <li><a href="fisica-estadistica.html">Física Estadística</a></li>
+                <li><a href="redes-complejas.html">Redes Complejas</a></li>
+                <li><a href="sistemas-complejos.html">Introducción a Sistemas Complejos</a></li>
+                <li><a href="fisica-cuantica.html">Introducción a la Física Cuántica</a></li>
+                <li><a href="termodinamica.html">Termodinámica</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fisica-estadistica">
+            <h2 class="titulo-clase"><a href="fisica-estadistica.html">Física Estadística (Oyente)</a></h2>
+        </section>
+
+        <section id="redes-complejas">
+            <h2 class="titulo-clase"><a href="redes-complejas.html">Redes Complejas</a></h2>
+        </section>
+
+        <section id="sistemas-complejos">
+            <h2 class="titulo-clase"><a href="sistemas-complejos.html">Introducción a Sistemas Complejos</a></h2>
+        </section>
+
+        <section id="fisica-cuantica">
+            <h2 class="titulo-clase"><a href="fisica-cuantica.html">Introducción a la Física Cuántica</a></h2>
+        </section>
+
+        <section id="termodinamica">
+            <h2 class="titulo-clase"><a href="termodinamica.html">Termodinámica</a></h2>
+        </section>
+
+        <div id="add-class-btn" class="admin-button">
+            <button onclick="alert('Añadir clase: Función no implementada aún')">Añadir Clase</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mis Notas Complejas (Iván MF)</p>
+    </footer>
+
+    <script>
+        // Solo muestra el botón si el usuario tiene un rol de administrador (esto es solo un ejemplo)
+        const isAdmin = true; // Cambia esto a false cuando no estés en modo administrador
+        if (!isAdmin) {
+            document.getElementById('add-class-btn').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
