@@ -26,6 +26,19 @@ header h1 {
     margin-bottom: 15px;
 }
 
+.descripcion {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.descripcion p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
 nav ul {
     list-style: none;
     display: flex;
