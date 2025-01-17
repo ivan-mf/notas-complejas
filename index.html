@@ -1,135 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Notas Blog de Iván M.F. </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mis Notas (Iván M.F.) </h1>
+        <div class="descripcion">
+            <p>Soy un estudiante de la licenciatura de física en la UNAM, México. En este espacio almaceno y comparto notas, apuntes y todo tesoro que complemente lo aprendido en los cursos que más he disfrutado de la carrera. </p>
+            <p>I am an undergraduate physics student at UNAM, Mexico. In this space, I store and share notes, summaries, and all the valuable insights that complement my learning from the courses I've most enjoyed during my degree.</p>
+        </div>
+    </header>
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('fondo.jpg'); /* Se agrega la imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Hace que la imagen se quede fija mientras se desplaza el contenido */
-    color: #333;
-    line-height: 1.6;
-}
+    <main>
+        <section id="fisica-estadistica">
+            <h2 class="titulo-clase"><a href="fisica-estadistica.html">Física Estadística (Oyente)</a></h2>
+        </section>
 
-header {
-    background-color: rgba(45, 59, 68, 0.8); /* Fondo semi-transparente para el header */
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+        <section id="redes-complejas">
+            <h2 class="titulo-clase"><a href="redes-complejas.html">Redes Complejas (Oyente)</a></h2>
+        </section>
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
+        <section id="sistemas-complejos">
+            <h2 class="titulo-clase"><a href="sistemas-complejos.html">Introducción a Sistemas Complejos</a></h2>
+        </section>
 
-.descripcion {
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.1rem;
-    color: #fff;
-}
+        <section id="fisica-cuantica">
+            <h2 class="titulo-clase"><a href="fisica-cuantica.html">Introducción a la Física Cuántica</a></h2>
+        </section>
 
-.descripcion p {
-    margin-bottom: 10px;
-    line-height: 1.8;
-}
+        <section id="termodinamica">
+            <h2 class="titulo-clase"><a href="termodinamica.html">Termodinámica</a></h2>
+        </section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
+        <div id="add-class-btn" class="admin-button">
+            <button onclick="alert('Añadir clase: Función no implementada aún')">Añadir Clase</button>
+        </div>
+    </main>
 
-nav ul li {
-    margin: 0 15px;
-}
+    <footer>
+        <p>&copy; 2024 Mis Notas (Iván MF)</p>
+    </footer>
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f39c12;
-}
-
-.titulo-clase {
-    font-size: 2rem;
-    text-align: center;
-    background-color: rgba(41, 128, 185, 0.8); /* Fondo semi-transparente */
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    transition: background-color 0.3s ease;
-}
-
-.titulo-clase:hover {
-    background-color: rgba(52, 152, 219, 0.8);
-}
-
-.titulo-clase a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-footer {
-    background-color: #2d3b44;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-.admin-button {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.admin-button button {
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.admin-button button:hover {
-    background-color: #c0392b;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    section {
-        padding: 15px;
-    }
-}
+    <script>
+        // Solo muestra el botón si el usuario tiene un rol de administrador (esto es solo un ejemplo)
+        const isAdmin = true; // Cambia esto a false cuando no estés en modo administrador
+        if (!isAdmin) {
+            document.getElementById('add-class-btn').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
